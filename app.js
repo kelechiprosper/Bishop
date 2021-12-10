@@ -13,3 +13,8 @@ var car = {
     speed: 300,
     drive: function(){return "drive"; }
 };
+var shoppinglist = [
+    "Apple",
+    "Banana",
+    "Pineapple",
+]
