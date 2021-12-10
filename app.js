@@ -18,3 +18,13 @@ var shoppinglist = [
     "Banana",
     "Pineapple",
 ]
+var car = {
+    make: "404",
+    speed: 150,
+    engine: {
+        size: 3.2,
+        make: "Ford",
+        fuel: "petrol",
+        pistons: [ { maker: "Ford" }, {maker: "Ford1"} ]
+    }
+};
