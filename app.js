@@ -8,3 +8,8 @@ function makeCofee(sugar,milk )
     return instruction;
 }
 console.log(makeCofee(2, 20) );
+var car = {
+    color: "red",
+    speed: 300,
+    drive: function(){return "drive"; }
+};
