@@ -20,14 +20,28 @@
 // ];
 // console.log(car.make);
 
-function name()
+function name(fullname)
 {
-    var fullname = "HIGH CHIEF";
 
-    function concat( name )
-    {
-        return"MR." + name;
-    }
-
-    return concat (fullname);
+    return fullname;
 }
+
+    // var obj = function(){};
+
+    console.log (name( function(){return "embed"; } )
+    );
+
+
+
+    // console.log(
+    //     name({firstname:"HIGH", lastname:"CHIEF"})
+    // );
+    // var fullname = "HIGH CHIEF";
+
+    // function concat( name )
+    // {
+    //     return"MR." + name;
+    // }
+
+    // return concat (fullname);
+
