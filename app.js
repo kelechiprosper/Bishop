@@ -20,16 +20,16 @@
 // ];
 // console.log(car.make);
 
-function name(fullname)
-{
+// function name(fullname)
+// {
 
-    return fullname;
-}
+//     return fullname();
+// }
 
     // var obj = function(){};
 
-    console.log (name( function(){return "embed"; } )
-    );
+    // console.log (name( function(){return "embed"; } )
+    // );
 
 
 
@@ -45,3 +45,17 @@ function name(fullname)
 
     // return concat (fullname);
 
+console.log( myName, printName() );
+
+var myName = "Lawrence";
+
+function printName()
+{
+    console.log( a, embed() );
+
+    var a = 100;
+
+    function embed(){return "hello"; }
+
+    return "nathan dude";
+}
