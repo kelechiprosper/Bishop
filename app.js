@@ -45,17 +45,41 @@
 
     // return concat (fullname);
 
-console.log( myName, printName() );
+// console.log( myName, printName() );
 
-var myName = "Lawrence";
+// var myName = "Lawrence";
 
-function printName()
+// function printName()
+// {
+//     console.log( a, embed() );
+
+//     var a = 100;
+
+//     function embed(){return "hello"; }
+
+//     return "nathan dude";
+// }
+
+var engine = {
+    maker: "lexus",
+    headGasket:{
+        pots:[
+            "piston1",
+            "piston2"
+        ]
+    }
+}
+
+function runExpression()
 {
-    console.log( a, embed() );
+    var a = 10;
 
-    var a = 100;
+    function add()
+        {
+            var b = 50
 
-    function embed(){return "hello"; }
 
-    return "nathan dude";
+        return a + b;
+    }
+    return 60;
 }
