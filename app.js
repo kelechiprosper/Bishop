@@ -60,26 +60,29 @@
 //     return "nathan dude";
 // }
 
-var engine = {
+    var engine ={
     maker: "lexus",
     headGasket:{
+        maker:"basketball",
         pots:[
             "piston1",
             "piston2"
         ]
     }
-}
+};
 
 function runExpression()
-{
+
+    {
+
     var a = 10;
 
     function add()
         {
-            var b = 50
 
-
-        return a + b;
+        test = "New string";
+        test2 = "new string";
+        test3 = "new string";
     }
-    return 60;
+    add();
 }
