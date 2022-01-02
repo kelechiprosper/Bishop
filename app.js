@@ -60,29 +60,58 @@
 //     return "nathan dude";
 // }
 
-    var engine ={
-    maker: "lexus",
-    headGasket:{
-        maker:"basketball",
-        pots:[
-            "piston1",
-            "piston2"
-        ]
+   // var engine ={
+   // maker: "lexus",
+    //headGasket:{
+       // maker:"basketball",
+        //pots:[
+           // "piston1",
+            //"piston2"
+       // ]
+    //}
+//};
+
+//function runExpression()
+
+   // {
+
+   // var a = 10;
+
+    //function add()
+        //{
+
+       // test = "New string";
+        //test2 = "new string";
+        //test3 = "new string";
+    //}
+    //add();
+//}
+
+//console.log( this );
+
+var object = {
+    prop: this,
+    embed:
+    {
+        embed:true,
+    method: function(){ return this; }
     }
 };
 
-function runExpression()
+var array = [
+    this,
+    function(){ return this; }
+];
 
-    {
+function global(){
+    //return this;
+    console.log('from global', this );
+    
+    function sub(){console.log('from sub', this)}
 
-    var a = 10;
-
-    function add()
-        {
-
-        test = "New string";
-        test2 = "new string";
-        test3 = "new string";
-    }
-    add();
+    sub();
 }
+
+global.call ( object );
+
+new global();
