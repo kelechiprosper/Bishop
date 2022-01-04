@@ -89,29 +89,14 @@
 
 //console.log( this );
 
-var object = {
-    prop: this,
-    embed:
-    {
-        embed:true,
-    method: function(){ return this; }
-    }
-};
-
-var array = [
-    this,
-    function(){ return this; }
-];
-
-function global(){
-    //return this;
-    console.log('from global', this );
-    
-    function sub(){console.log('from sub', this)}
-
-    sub();
+function Apple(x, y, colour, score)
+{
+    this.x=x;
+    this.y=y;
+    this.colour=colour;
+    this.score=score;
 }
 
-global.call ( object );
-
-new global();
+var Apple1  = new Apple(20, 10, "red", 400);
+var Apple2  = new Apple(14, 12, "blue", 100);
+var Apple3 = new Apple(30, 60, "white", 250);
