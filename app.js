@@ -101,7 +101,7 @@
 //var Apple2  = new Apple(14, 12, "blue", 100);
 //var Apple3 = new Apple(30, 60, "white", 250);
 
-var carsLeft = 0,
+var carsLeft = 1,
 carsRight = 0,
 greenMan = "no";
 
@@ -112,4 +112,8 @@ if( greenMan === "yes" )
  else if(carsLeft === 0 )
  {
     console.log(' All clear! cross the road' );
+ }
+ else
+ {
+    console.log( "stay where you are!" );
  }
