@@ -89,14 +89,23 @@
 
 //console.log( this );
 
-function Apple(x, y, colour, score)
-{
-    this.x=x;
-    this.y=y;
-    this.colour=colour;
-    this.score=score;
-}
+//function Apple(x, y, colour, score)
+//{
+   // this.x=x;
+    //this.y=y;
+    //this.colour=colour;
+   // this.score=score;
+//}
 
-var Apple1  = new Apple(20, 10, "red", 400);
-var Apple2  = new Apple(14, 12, "blue", 100);
-var Apple3 = new Apple(30, 60, "white", 250);
+//var Apple1  = new Apple(20, 10, "red", 400);
+//var Apple2  = new Apple(14, 12, "blue", 100);
+//var Apple3 = new Apple(30, 60, "white", 250);
+
+var carsLeft = 0,
+carsRight = 0,
+greenMan = "yes";
+
+if( greenMan === "yes" )
+ {
+    console.log('cross the road');
+ }
